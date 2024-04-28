@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int Prime_No(int n);
+int main()
+{
+	int x,y,i;
+	int flag;
+	fflush(stdout); fflush(stdin);
+printf("enter the intervals");
+fflush(stdout); fflush(stdin);
+
+scanf("%d %d",&x,&y);
+for(i=x+1;i<y;++i)
+{
+    flag=Prime_No(i);
+	if(flag==0)
+	{
+		fflush(stdout); fflush(stdin);
+
+		printf("%d  ",i);
+}
+
+}
+		return 0;
+}
+int Prime_No(int n)
+{
+	int flag=0;
+	int j;
+	for(j=2;j<=n/2;++j)
+	{
+		if(n%j==0)
+			{
+			flag=1;
+		break;
+			}
+	}
+
+return flag;
+
+}

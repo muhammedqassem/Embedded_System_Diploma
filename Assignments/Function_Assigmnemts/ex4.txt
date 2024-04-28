@@ -1,0 +1,26 @@
+int power(int x,int y);
+
+int main()
+{
+	int a ,b;
+fflush(stdin); fflush(stdout);
+	printf("enter the base  ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &a);
+	fflush(stdin); fflush(stdout);
+		printf("enter the power ");
+		fflush(stdin); fflush(stdout);
+		scanf("%d",&b);
+	power(a,b);
+	fflush(stdin); fflush(stdout);
+	printf("the power =%d",power(a,b));
+}
+int power(int x,int y)
+{
+if(y!=0)
+{
+return (x*power(x,y-1));
+}
+else return 1;
+
+}
