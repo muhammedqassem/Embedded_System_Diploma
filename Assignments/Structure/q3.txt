@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+ typedef struct Scomplex{
+	
+	
+	float m_Real; /* for real number */
+    float m_Imagine; /* for imagine number*/
+	
+		}ComFun;
+    ComFun add(ComFun num1,ComFun num2);
+		int main()
+		{
+		 	struct Scomplex x,y,summ;
+			printf("enter  num1  real   : \n");
+			
+			scanf("%f",&x.m_Real);
+			printf("enter  num1  imagine   : \n");
+			
+			scanf("%f",&x.m_Imagine);
+			printf("enter  num2  real   : \n");
+			
+			scanf("%f",&y.m_Real);
+			printf("enter  num2  imagine   : \n");
+			
+			scanf("%f",&y.m_Imagine);
+			
+			summ=add(x,y);
+			printf("the summation of 2 complex number is =  %0.1f+%0.1f i",summ.m_Real,summ.m_Imagine);
+			return 0;
+		}
+		ComFun add(ComFun num1,ComFun num2)
+		{
+		struct 	Scomplex adding ;
+			adding.m_Real=num1.m_Real+num2.m_Real;
+			adding.m_Imagine=num1.m_Imagine+num2.m_Imagine;
+			return (adding);
+		}

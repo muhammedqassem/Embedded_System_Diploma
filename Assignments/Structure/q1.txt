@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+struct Sdata{
+	
+	char m_Name[50];
+	int m_Roll;
+    float  m_Mark;
+	
+		};
+
+		int main()
+		{
+			struct Sdata X;
+			printf("enter the infromation of students : \n");
+			printf("enter the student name : \n");
+			scanf("%s",X.m_Name);
+			printf("enter the student roll : \n ");
+			scanf("%d",&X.m_Roll);
+			printf("enter the student mark : \n ");
+			scanf("%f",&X.m_Mark);
+			
+		
+			printf("Displaying Infromation \n ");
+			printf(" Name : %s \n",X.m_Name);
+			printf("Roll=  %d \n",X.m_Roll);
+			printf("Mark=  %0.2f \n",X.m_Mark);
+			
+			
+			return 0;
+		}

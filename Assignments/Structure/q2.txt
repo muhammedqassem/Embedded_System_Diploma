@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<string.h>
+#include<conio.h>
+struct Sdata{
+	
+	
+	int m_feet ;
+    float m_inch  ;
+	
+		}NUM1,NUM2,SUM;
+
+		int main()
+		{
+			
+			printf("enter  num1  in feets  : \n");
+			
+			scanf("%d",&NUM1.m_feet);
+			printf("enter num1 in inchs : \n ");
+			scanf("%f",&NUM1.m_inch);
+			printf("enter  num2  in feets  : \n");
+			
+			scanf("%d",&NUM2.m_feet);
+			printf("enter num2 in inchs : \n ");
+			scanf("%f",&NUM2.m_inch);
+			
+			SUM.m_feet=NUM1.m_feet+NUM2.m_feet;
+			SUM.m_inch=NUM1.m_inch+NUM2.m_inch;
+			if(SUM.m_inch>=12)
+			{
+				SUM.m_inch=SUM.m_inch-12;
+				SUM.m_feet ++;
+			}
+			
+			printf("distance = %d ' - %0.1f ''" ,SUM.m_feet,SUM.m_inch);
+			return 0;
+		}

@@ -1,0 +1,2 @@
+size of sturctue = 40 /*sizeof(int)+sizeof(char)+sizeof(float)=32+4+4=40*/
+size of union =32 /*the largest size of members*/
