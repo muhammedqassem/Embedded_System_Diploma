@@ -1,0 +1,17 @@
+#include<stdio.h>
+struct Semployee
+{
+	char* mempname;
+	int mempid;
+	
+};
+int main()
+{
+	static struct Semployee emp1={"john",2030},emp2={"alex",2040},emp3={"hady",2060};
+	struct Semployee(*arr[])={&emp1,&emp2,&emp3};
+	struct Semployee(*(*pt)[3])=&arr;
+	printf(" emp name = %s \n ",(**(*pt+1)).mempname);
+	printf(" the id of employee %d \n",(*(*pt+1))->mempid);
+	
+	
+}
